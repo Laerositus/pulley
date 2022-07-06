@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
         
         if (rb.velocity.magnitude < maxSpeed)
         {
+            Debug.Log("AddForce");
             rb.AddForce(new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed));
         }
         
