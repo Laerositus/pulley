@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c710bfb9-4df8-4922-bbf1-2856506ef904" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pulley/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pulley/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInputActions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInputActions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rule Tiles/New Rule Tile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rule Tiles/New Rule Tile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Palettes/Default.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/Default.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/terrain.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/terrain.psd.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
