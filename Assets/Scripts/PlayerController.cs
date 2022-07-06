@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         playerControls = new PlayerInputActions();
-        moveSpeed = moveSpeed * Time.deltaTime;
+        // moveSpeed = moveSpeed * Time.deltaTime;
     }
 
     private void OnEnable()
@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        // rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        rb.AddForce(new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed));
     }
 }

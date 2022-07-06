@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c710bfb9-4df8-4922-bbf1-2856506ef904" name="Changes" comment="" />
+    <list default="true" id="c710bfb9-4df8-4922-bbf1-2856506ef904" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pulley/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pulley/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInputActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInputActions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GrapplingGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GrapplingGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GrapplingGun.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -65,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657099035840</updated>
-      <workItem from="1657099045012" duration="888000" />
+      <workItem from="1657099045012" duration="2868000" />
     </task>
     <servers />
   </component>

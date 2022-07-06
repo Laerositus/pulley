@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GrapplingGun : MonoBehaviour
 {
@@ -31,6 +33,9 @@ public class GrapplingGun : MonoBehaviour
     [SerializeField] private bool hasMaxDistance = false;
     [SerializeField] private float maxDistnace = 20;
 
+    public PlayerInputActions gunControls;
+    private InputAction fire;
+    
     private enum LaunchType
     {
         Transform_Launch,
@@ -50,6 +55,22 @@ public class GrapplingGun : MonoBehaviour
     [HideInInspector] public Vector2 grapplePoint;
     [HideInInspector] public Vector2 grappleDistanceVector;
 
+    private void Awake()
+    {
+        gunControls = new PlayerInputActions();
+    }
+
+    private void OnEnable()
+    {
+        fire = gunControls.Player.Fire;
+        fire.Enable();
+    }
+
+    private void OnDisable()
+    {
+        fire.Disable();
+    }
+
     private void Start()
     {
         grappleRope.enabled = false;
@@ -59,11 +80,11 @@ public class GrapplingGun : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (fire.WasPressedThisFrame())
         {
             SetGrapplePoint();
         }
-        else if (Input.GetKey(KeyCode.Mouse0))
+        else if (fire.IsPressed())
         {
             if (grappleRope.enabled)
             {
@@ -71,7 +92,7 @@ public class GrapplingGun : MonoBehaviour
             }
             else
             {
-                Vector2 mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos = m_camera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
                 RotateGun(mousePos, true);
             }
 
@@ -85,7 +106,7 @@ public class GrapplingGun : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetKeyUp(KeyCode.Mouse0))
+        else if (fire.WasReleasedThisFrame())
         {
             grappleRope.enabled = false;
             m_springJoint2D.enabled = false;
@@ -93,7 +114,7 @@ public class GrapplingGun : MonoBehaviour
         }
         else
         {
-            Vector2 mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePos = m_camera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
             RotateGun(mousePos, true);
         }
     }
@@ -115,7 +136,7 @@ public class GrapplingGun : MonoBehaviour
 
     void SetGrapplePoint()
     {
-        Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
+        Vector2 distanceVector = m_camera.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - gunPivot.position;
         if (Physics2D.Raycast(firePoint.position, distanceVector.normalized))
         {
             RaycastHit2D _hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);
